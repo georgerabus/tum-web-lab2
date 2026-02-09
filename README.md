@@ -1,13 +1,9 @@
 # MiniGarden Landing Page
 
-Landing page (HTML + CSS, fără framework) pentru MiniGarden — suculente și mini aranjamente.
+Landing page (HTML + CSS) pentru MiniGarden — suculente și mini aranjamente.
 
 ## Live demo
-- (după deploy) https://USERNAME.github.io/REPO/
-
-## Screenshots
-Pune un screenshot în `screenshots/home.png` și adaugă-l aici:
-![Home](screenshots/home.png)
+- https://georgerabus.github.io/tum-web-lab2/
 
 ## Secțiuni
 - Hero + CTA
