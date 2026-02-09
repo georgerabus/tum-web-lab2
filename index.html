@@ -129,19 +129,99 @@
       </section>
 
       <section class="section" id="ingrijire">
-        <h2>Îngrijire</h2>
-        <p class="lead">În curând: ghid rapid.</p>
+        <h2>Ghid rapid de îngrijire</h2>
+        <p class="lead">
+          3 reguli simple ca suculenta să arate bine luni de zile.
+        </p>
+
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Lumină</h3>
+            <p>Multă lumină naturală (ideal lângă geam).</p>
+          </div>
+          <div class="card">
+            <h3>Udare</h3>
+            <p>Doar când solul e complet uscat. Mai rar iarna.</p>
+          </div>
+          <div class="card">
+            <h3>Sol drenat</h3>
+            <p>Substrat pentru cactuși/suculente + ghiveci cu drenaj.</p>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="recenzii">
         <h2>Recenzii</h2>
-        <p class="lead">În curând: 3 testimoniale.</p>
+        <p class="lead">Pune aici recenzii reale când le primești.</p>
+
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>★★★★★</h3>
+            <p>“Aranjamentul arată exact ca în poze. Cadoul perfect!”</p>
+            <p class="small" style="margin-top: 10px">— Ana</p>
+          </div>
+          <div class="card">
+            <h3>★★★★★</h3>
+            <p>“Foarte frumos ambalat, super minimalist.”</p>
+            <p class="small" style="margin-top: 10px">— Vlad</p>
+          </div>
+          <div class="card">
+            <h3>★★★★★</h3>
+            <p>“Nu mă pricep la plante și totuși o țin vie. Deci e top!”</p>
+            <p class="small" style="margin-top: 10px">— Irina</p>
+          </div>
+        </div>
       </section>
 
       <section class="section" id="contact">
         <h2>Contact</h2>
-        <p class="lead">În curând: formular.</p>
+        <p class="lead">
+          Completează formularul și te contactăm. (Nu trebuie să trimită email
+          real.)
+        </p>
+
+        <form class="form" action="#" method="post">
+          <div class="field">
+            <label for="name">Nume</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Ex: Victor"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="exemplu@mail.com"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="message">Mesaj</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Ce vrei să comanzi / întrebi?"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Trimite</button>
+        </form>
       </section>
     </main>
+    <footer>
+      <div class="container footer-row">
+        <span>© 2026 MiniGarden</span>
+        <a class="btn" href="#top">Înapoi sus</a>
+      </div>
+    </footer>
   </body>
 </html>

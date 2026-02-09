@@ -273,3 +273,46 @@ nav a:hover{
   font-size: 14px;
   color: var(--muted);
 }
+
+.form{
+  display: grid;
+  gap: 12px;
+  max-width: 560px;
+}
+
+.field{
+  display: grid;
+  gap: 6px;
+}
+
+label{ font-weight: 700; }
+
+input, textarea{
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.85);
+}
+
+textarea{ min-height: 120px; resize: vertical; }
+
+footer{
+  border-top: 1px solid var(--border);
+  padding: 22px 0;
+  color: var(--muted);
+}
+
+.footer-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px){
+  .hero-grid{ grid-template-columns: 1fr; }
+  .hero-media img{ height: 300px; }
+  .grid.cols-3{ grid-template-columns: 1fr; }
+  .grid.cols-2{ grid-template-columns: 1fr; }
+}
