@@ -3,229 +3,471 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MiniGarden — Suculente</title>
+    <title>MiniGarden - Suculente</title>
     <meta
       name="description"
-      content="MiniGarden — suculente și mini aranjamente."
+      content="MiniGarden - suculente, mini aranjamente si decor calm pentru birou, balcon si cadouri."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Sari la conținut</a>
+    <a class="skip-link" href="#main">Sari la continut</a>
 
-    <header>
-      <div class="container navbar">
-        <a class="brand" href="#top" aria-label="MiniGarden - acasă">
-          <img src="assets/logo.png" alt="Logo MiniGarden" />
-          <span>MiniGarden</span>
-        </a>
+    <div class="page-glow glow-left" aria-hidden="true"></div>
+    <div class="page-glow glow-right" aria-hidden="true"></div>
 
-        <nav aria-label="Navigație principală">
-          <ul role="list">
-            <li><a href="#produse">Produse</a></li>
-            <li><a href="#beneficii">Beneficii</a></li>
-            <li><a href="#ingrijire">Îngrijire</a></li>
-            <li><a href="#recenzii">Recenzii</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <header class="site-header">
+      <div class="container">
+        <div class="site-header-row">
+          <a class="brand" href="#top" aria-label="MiniGarden - acasa">
+            <img src="assets/logo.png" alt="Logo MiniGarden" />
+            <span>
+              <strong class="brand-name">MiniGarden</strong>
+              <span class="brand-tag">suculente care nu cer mult</span>
+            </span>
+          </a>
+
+          <nav class="site-nav" aria-label="Navigatie principala">
+            <a href="#produse">Produse</a>
+            <a href="#beneficii">Beneficii</a>
+            <a href="#ingrijire">Ingrijire</a>
+            <a href="#recenzii">Recenzii</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <a class="btn btn-success header-cta" href="#contact">Comanda rapida</a>
+        </div>
       </div>
     </header>
 
-    <main id="main" class="container">
-      <section class="hero" id="top">
-        <div class="hero-grid">
-          <div>
-            <h1>Suculente care îți fac casa mai “zen”.</h1>
-            <p class="subtitle">
-              MiniGarden aduce mini-arajamente și suculente perfecte pentru
-              birou, cadou sau colțul tău verde.
-            </p>
+    <main id="main">
+      <section class="hero-section" id="top">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-6">
+              <p class="eyebrow">Mini aranjamente pentru birou, balcon si cadou</p>
+              <h1>Mini-suculente care arata premium si se cresc fara drama.</h1>
+              <p class="hero-copy">
+                MiniGarden iti aduce ghivece mici, compozitii curate si recomandari
+                simple ca sa alegi rapid planta potrivita pentru spatiul tau.
+              </p>
 
-            <div class="cta">
-              <a class="btn btn-primary" href="#produse">Vezi colecția</a>
-              <a class="btn" href="#contact">Comandă / întreabă</a>
+              <div class="hero-actions">
+                <a class="btn btn-success btn-lg" href="#produse">Vezi colectia</a>
+                <a class="btn btn-outline-dark btn-lg" href="#contact"
+                  >Comanda / intreaba</a
+                >
+              </div>
+
+              <div class="row g-3 hero-metrics" aria-label="Avantaje principale">
+                <div class="col-sm-4">
+                  <article class="metric-card">
+                    <strong>7-10 zile</strong>
+                    <span>intre udari pentru cele mai multe modele</span>
+                  </article>
+                </div>
+                <div class="col-sm-4">
+                  <article class="metric-card">
+                    <strong>2 minute</strong>
+                    <span>iti ia sa completezi comanda sau sa ceri sfaturi</span>
+                  </article>
+                </div>
+                <div class="col-sm-4">
+                  <article class="metric-card">
+                    <strong>100%</strong>
+                    <span>vibe calm si minimal pentru un colt luminos</span>
+                  </article>
+                </div>
+              </div>
             </div>
 
-            <div class="badges" aria-label="Puncte forte">
-              <span class="badge">Îngrijire ușoară</span>
-              <span class="badge">Ideale pentru cadou</span>
-              <span class="badge">Design minimalist</span>
+            <div class="col-lg-6">
+              <div class="hero-showcase">
+                <div class="hero-card">
+                  <img
+                    src="assets/hero.jpg"
+                    alt="Aranjament cu suculente pe o masa luminoasa"
+                  />
+                </div>
+                <div class="floating-pill">Livrare locala si recomandari rapide</div>
+                <aside class="floating-review">
+                  <span>★★★★★</span>
+                  <p>
+                    "Cadou instant, arata elegant si nu sperie oamenii care nu se
+                    pricep la plante."
+                  </p>
+                </aside>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="hero-media" aria-label="Imagine suculente">
+      <section class="mobile-only-spotlight" aria-label="Oferta rapida pentru mobil">
+        <div class="container">
+          <div class="mobile-spotlight-card">
+            <div>
+              <p class="mobile-kicker">Doar pe mobil</p>
+              <h2>Kit rapid pentru birou</h2>
+              <p>
+                Vrei ceva mic, usor de intretinut si gata de pus pe birou? Iti
+                recomandam un kit compact in cateva secunde.
+              </p>
+              <a class="btn btn-success" href="#contact">Vreau recomandare</a>
+            </div>
             <img
-              src="assets/hero.jpg"
-              alt="Aranjament cu suculente pe o masă luminoasă"
+              src="assets/product1.jpeg"
+              alt="Kit compact pentru birou cu suculenta"
             />
           </div>
         </div>
       </section>
 
-      <section class="section" id="produse">
-        <h2>Produse populare</h2>
-        <p class="lead">
-          Două dintre cele mai îndrăgite aranjamente MiniGarden — perfecte
-          pentru cadou sau colțul tău verde.
-        </p>
-
-        <div class="grid cols-2">
-          <article class="card product">
-            <div class="thumb">
-              <img src="assets/product1.jpeg" alt="Motănelul suculent" />
-            </div>
+      <section class="section-block" id="produse">
+        <div class="container">
+          <div class="section-top">
             <div>
-              <h3>Motănelul suculent</h3>
-              <p>Mic, simpatic și perfect pentru un cadou celor dragi.</p>
-              <div class="price">200 MDL</div>
-              <div class="small">În stoc</div>
+              <p class="section-kicker">Colectie</p>
+              <h2>Produse populare</h2>
+              <p class="lead">
+                Doua aranjamente care functioneaza foarte bine ca accent de birou,
+                cadou sau colt verde pentru living.
+              </p>
             </div>
-          </article>
+            <a class="btn btn-outline-success desktop-only-inline" href="#contact"
+              >Vreau sa comand</a
+            >
+          </div>
 
-          <article class="card product">
-            <div class="thumb">
-              <img src="assets/product2.jpeg" alt="Mănăstirea ascunsă" />
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="product-card card border-0 h-100">
+                <div class="card-body">
+                  <div class="product-media">
+                    <img src="assets/product1.jpeg" alt="Motanelul suculent" />
+                  </div>
+                  <div class="product-heading">
+                    <div>
+                      <span class="product-chip">Cadou bestseller</span>
+                      <h3>Motanelul suculent</h3>
+                    </div>
+                    <strong class="product-price">200 MDL</strong>
+                  </div>
+                  <p>
+                    Mic, simpatic si foarte usor de integrat pe birou sau intr-un
+                    colt luminos de acasa.
+                  </p>
+                  <ul class="product-points">
+                    <li>ghiveci compact</li>
+                    <li>intretinere usoara</li>
+                    <li>cadou sigur</li>
+                  </ul>
+                </div>
+              </article>
             </div>
+
+            <div class="col-md-6">
+              <article class="product-card card border-0 h-100">
+                <div class="card-body">
+                  <div class="product-media">
+                    <img src="assets/product2.jpeg" alt="Manastirea ascunsa" />
+                  </div>
+                  <div class="product-heading">
+                    <div>
+                      <span class="product-chip">Statement piece</span>
+                      <h3>Manastirea ascunsa</h3>
+                    </div>
+                    <strong class="product-price">499 MDL</strong>
+                  </div>
+                  <p>
+                    Aranjament cu prezenta mai puternica, ideal pentru living, receptie
+                    sau un cadou memorabil.
+                  </p>
+                  <ul class="product-points">
+                    <li>aspect premium</li>
+                    <li>decor de impact</li>
+                    <li>gata de oferit</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="care-banner">
             <div>
-              <h3>Mănăstirea ascunsă</h3>
-              <p>Aranjament mai “statement” pentru living sau birou.</p>
-              <div class="price">499 MDL</div>
-              <div class="small">În stoc</div>
+              <p class="section-kicker">MiniGarden promise</p>
+              <h3>Alegem impreuna planta potrivita pentru lumina, timp si stilul tau.</h3>
             </div>
-          </article>
-        </div>
-
-        <div style="margin-top: 16px">
-          <a class="btn btn-primary" href="#contact">Vreau să comand</a>
+            <a class="btn btn-success" href="#contact">Cere recomandare</a>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="beneficii">
-        <h2>De ce suculente?</h2>
-        <p class="lead">
-          Arată bine, cer puțin și “ridică” instant vibe-ul într-o cameră.
-        </p>
-
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>Îngrijire minimă</h3>
-            <p>Udare rară, fără stres zilnic.</p>
-          </div>
-          <div class="card">
-            <h3>Decor modern</h3>
-            <p>Forme și culori care merg în orice interior.</p>
-          </div>
-          <div class="card">
-            <h3>Cadou potrivit</h3>
-            <p>Mic, elegant și memorabil.</p>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top: 16px">
-          <h3>Despre MiniGarden</h3>
-          <p>
-            MiniGarden — un colț mic de natură pentru casa ta. Aranjamente
-            simple, îngrijire ușoară, vibe liniștit.
+      <section class="section-block alt-section" id="beneficii">
+        <div class="container">
+          <p class="section-kicker">De ce MiniGarden</p>
+          <h2>De ce suculente?</h2>
+          <p class="lead">
+            Arata bine in spatii mici, au nevoie de putina rutina si schimba rapid
+            atmosfera unui colt de lucru sau de relaxare.
           </p>
+
+          <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-xl-4">
+            <div class="col">
+              <article class="info-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="info-badge">01</span>
+                  <h3>Ingrijire minima</h3>
+                  <p>Udare rara, fara stres zilnic si fara ritualuri complicate.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="info-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="info-badge">02</span>
+                  <h3>Decor calm</h3>
+                  <p>Linii simple, texturi naturale si un aer fresh pentru interior.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="info-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="info-badge">03</span>
+                  <h3>Cadou potrivit</h3>
+                  <p>Mic, elegant si usor de pastrat chiar si pentru incepatori.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col">
+              <article class="info-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="info-badge">04</span>
+                  <h3>Perfect pentru spatii mici</h3>
+                  <p>Functioneaza bine pe pervaz, raft, receptie sau masa de birou.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="about-panel">
+            <div>
+              <p class="section-kicker">Despre noi</p>
+              <h3>MiniGarden combina designul minimal cu plante care nu cer mult timp.</h3>
+            </div>
+            <p>
+              Pregatim aranjamente curate, usor de oferit si usor de intretinut, cu
+              focus pe un look calm si coerent pentru casa sau birou.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="ingrijire">
-        <h2>Ghid rapid de îngrijire</h2>
-        <p class="lead">
-          3 reguli simple ca suculenta să arate bine luni de zile.
-        </p>
+      <section class="section-block" id="ingrijire">
+        <div class="container">
+          <p class="section-kicker">Ghid rapid</p>
+          <h2>3 pasi simpli de ingrijire</h2>
+          <p class="lead">
+            Daca respecti lumina, udarea si drenajul, suculenta ramane un decor
+            relaxat luni de zile.
+          </p>
 
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>Lumină</h3>
-            <p>Multă lumină naturală (ideal lângă geam).</p>
-          </div>
-          <div class="card">
-            <h3>Udare</h3>
-            <p>Doar când solul e complet uscat. Mai rar iarna.</p>
-          </div>
-          <div class="card">
-            <h3>Sol drenat</h3>
-            <p>Substrat pentru cactuși/suculente + ghiveci cu drenaj.</p>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="care-step card border-0 h-100">
+                <div class="card-body">
+                  <span class="step-no">1</span>
+                  <h3>Lumina buna</h3>
+                  <p>Plaseaza ghiveciul aproape de geam, unde primeste multa lumina.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="care-step card border-0 h-100">
+                <div class="card-body">
+                  <span class="step-no">2</span>
+                  <h3>Udare rara</h3>
+                  <p>Uda doar dupa ce solul este complet uscat, mai rar in sezonul rece.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="care-step card border-0 h-100">
+                <div class="card-body">
+                  <span class="step-no">3</span>
+                  <h3>Sol aerat</h3>
+                  <p>Foloseste substrat pentru cactusi si un ghiveci cu drenaj real.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="recenzii">
-        <h2>Recenzii</h2>
-        <p class="lead">Pune aici recenzii reale când le primești.</p>
+      <section class="section-block alt-section" id="recenzii">
+        <div class="container">
+          <p class="section-kicker">Recenzii</p>
+          <h2>Ce spun clientii</h2>
+          <p class="lead">
+            Feedback-ul conteaza pentru ca majoritatea cumparatorilor cauta ceva
+            frumos, simplu si usor de intretinut.
+          </p>
 
-        <div class="grid cols-3">
-          <div class="card">
-            <h3>★★★★★</h3>
-            <p>“Aranjamentul arată exact ca în poze. Cadoul perfect!”</p>
-            <p class="small" style="margin-top: 10px">— Ana</p>
-          </div>
-          <div class="card">
-            <h3>★★★★★</h3>
-            <p>“Foarte frumos ambalat, super minimalist.”</p>
-            <p class="small" style="margin-top: 10px">— Vlad</p>
-          </div>
-          <div class="card">
-            <h3>★★★★★</h3>
-            <p>“Nu mă pricep la plante și totuși o țin vie. Deci e top!”</p>
-            <p class="small" style="margin-top: 10px">— Irina</p>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <article class="testimonial-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="testimonial-score">★★★★★</span>
+                  <p>
+                    "Aranjamentul arata exact ca in poze si a mers perfect ca dar
+                    pentru o colega."
+                  </p>
+                  <div class="testimonial-meta">
+                    <strong>Ana</strong>
+                    <span>cadou corporate</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="testimonial-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="testimonial-score">★★★★★</span>
+                  <p>
+                    "Imi place ca arata minimalist si nu cere multa atentie. Exact
+                    ce voiam pentru birou."
+                  </p>
+                  <div class="testimonial-meta">
+                    <strong>Vlad</strong>
+                    <span>home office</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-4">
+              <article class="testimonial-card card border-0 h-100">
+                <div class="card-body">
+                  <span class="testimonial-score">★★★★★</span>
+                  <p>
+                    "Nu ma pricep la plante, dar recomandarile au fost clare si a
+                    fost foarte usor sa aleg."
+                  </p>
+                  <div class="testimonial-meta">
+                    <strong>Irina</strong>
+                    <span>primul ei mini-aranjament</span>
+                  </div>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="contact">
-        <h2>Contact</h2>
-        <p class="lead">
-          Completează formularul și te contactăm. (Nu trebuie să trimită email
-          real.)
-        </p>
+      <section class="section-block contact-section" id="contact">
+        <div class="container">
+          <div class="row g-4 align-items-stretch">
+            <div class="col-lg-5">
+              <div class="contact-copy">
+                <p class="section-kicker">Contact</p>
+                <h2>Spune-ne unde va sta planta si iti recomandam varianta corecta.</h2>
+                <p>
+                  Completeaza formularul si revenim cu o propunere rapida. Formularul
+                  ramane demonstrativ, fara trimitere de email real.
+                </p>
 
-        <form class="form" action="#" method="post">
-          <div class="field">
-            <label for="name">Nume</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Ex: Victor"
-              required
-            />
+                <ul class="contact-points">
+                  <li>raspuns rapid pentru comenzi si intrebari</li>
+                  <li>recomandari dupa lumina, spatiu si nivel de experienta</li>
+                  <li>aranjamente potrivite pentru cadou sau birou</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <form class="contact-form card border-0 h-100" action="#" method="post">
+                <div class="card-body p-4 p-md-5">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="name">Nume</label>
+                      <input
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Ex: Victor"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label" for="email">Email</label>
+                      <input
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="exemplu@mail.com"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label" for="message">Mesaj</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Ce vrei sa comanzi sau ce intrebari ai?"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn btn-success btn-lg" type="submit">
+                        Trimite cererea
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-
-          <div class="field">
-            <label for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="exemplu@mail.com"
-              required
-            />
-          </div>
-
-          <div class="field">
-            <label for="message">Mesaj</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Ce vrei să comanzi / întrebi?"
-              required
-            ></textarea>
-          </div>
-
-          <button class="btn btn-primary" type="submit">Trimite</button>
-        </form>
+        </div>
       </section>
     </main>
-    <footer>
+
+    <footer class="site-footer">
       <div class="container footer-row">
-        <span>© 2026 MiniGarden</span>
-        <a class="btn" href="#top">Înapoi sus</a>
+        <div>
+          <strong>MiniGarden</strong>
+          <p>© 2026 MiniGarden. Suculente, mini-arajamente si un vibe mai calm.</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Linkuri din subsol">
+          <a href="#produse">Produse</a>
+          <a href="#beneficii">Beneficii</a>
+          <a href="#ingrijire">Ingrijire</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
     </footer>
+
+    <a class="mobile-cta-bar" href="#contact" aria-label="Comanda rapida pe mobil">
+      <span>CTA mobil</span>
+      <strong>Comanda rapida</strong>
+    </a>
   </body>
 </html>
